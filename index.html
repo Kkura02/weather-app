@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <form style="display: flex">
+      <input type="text" placeholder="Search City..." />
+      <ul></ul>
+    </form>
+
+    <div id="weather" style="display: none">
+      <img src="" alt="" id="icon" />
+      <h3 id="weatherDescription"></h3>
+      <h1 id="degrees">--&deg;C</h1>
+      <h2 id="city">---- <span>--</span></h2>
+      <button id="change">change city</button>
+      <div class="info">
+        <div>
+          <h3>Wind</h3>
+          <div id="windValue" class="value">-<span>km/h</span></div>
+        </div>
+        <div>
+          <h3>Feels like</h3>
+          <div id="feelslikeValue" class="value">-<span>&deg;C</span></div>
+        </div>
+        <div>
+          <h3>Humidity</h3>
+          <div id="humidityValue" class="value">-<span>%</span></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="weather.js"></script>
+  </body>
+</html>
